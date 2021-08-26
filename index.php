@@ -1,4 +1,6 @@
-<title>michael_project_1</title>
+<?php include 'login.php'; ?>
+
+<title>Michael's store</title>
 
 <h1 class='text-primary'>Welcome to our shopfront</h1>
 
@@ -29,7 +31,7 @@
 
                     <center>
                         <button name="login" class="btn btn-primary"><span
-                                class="glyphicon glyphicon-log-in"></span> Login
+                                    class="glyphicon glyphicon-log-in"></span> Login
                         </button>
                     </center>
                 </form>
