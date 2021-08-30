@@ -1,14 +1,15 @@
 <?php
 require_once 'config.php';
+include 'template.php';
 /**
  * @var SQLite3 $conn
  */
 
 if (isset($_POST['login'])) {
-    $userName = sanitise_data($_POST['username']);
+    $username = sanitise_data($_POST['username']);
     $password = sanitise_data($_POST['password']);
 
-    $query = $conn->query("SELECT COUNT(*) as count, * FROM `user` WHERE `userName`='$userName'");
+    $query = $conn->query("SELECT COUNT(*) as count, * FROM `user` WHERE `userName`='$username'");
     $row = $query->fetchArray();
     $count = $row['count'];
     if ($count > 0) {

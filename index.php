@@ -11,8 +11,8 @@
             <p>Password: admin</p>
             <p>username: user</p>
             <p>Password: user</p>
-            <p>username: ryan</p>
-            <p>Password: ryan</p>
+            <p>username: michael</p>
+            <p>Password: michael</p>
             <p>username: testuser</p>
             <p>Password: testuser</p>
         </div>

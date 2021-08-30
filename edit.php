@@ -7,9 +7,9 @@
  */
 
 ?>
-<title>User Profile</title>
+<title>Edit your profile</title>
 
-<h1 class='text-primary'>Profile Page</h1>
+<h1 class='text-primary'>Edit your Profile</h1>
 
 
 <?php
@@ -42,13 +42,17 @@ if (isset($_SESSION["username"])) {
     <div class="row">
         <div class="col-md-6">
             <h3>Username :  <?php echo $username; ?></h3>
+            <p> Name : <?php echo $name ?> </p>
+            <p> Access Level : <?php echo $accessLevel ?> </p>
             <p>Profile Picture:</p>
             <?php echo "<img src='images/profilePic/".$profilePic."' width='100' height='100'>"   ?>
         </div>
         <div class="col-md-6">
-            <p> Name : <?php echo $name ?> </p>
-            <p> Access Level : <?php echo $accessLevel ?> </p>
-            <p><a href="edit.php" title="Edit">Edit Profile</a></p>
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="muiltipart/form-data">
+<p>Name:<input type="text" name="name" value="<?php echo $name ?>"></p>
+<p>Access Level:<input type="text" name="accessLevel" value="<?php echo $accessLevel ?>"></p>
+<p>profile Picture</p>
+</form>
         </div>
     </div>
 </div>
