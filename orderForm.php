@@ -1,13 +1,11 @@
-
+<title>Order Form</title>
 <?php include "template.php";
 /**
  * @var SQLite3 $conn
  */
+
 ?>
-
-<title>Order Form</title>
 <link rel="stylesheet" href="css/orderForm.css">
-
 <h1 class="text-primary">Order Form</h1>
 
 <?php
@@ -55,7 +53,9 @@ if (isset($_POST['code']) && $_POST['code'] != "") {
     <?php echo $status; ?>
 </div>
 
+
 <?php
+
 if (!empty($_SESSION["shopping_cart"])) {
     $cart_count = count(array_keys($_SESSION["shopping_cart"]));
     ?>
@@ -65,10 +65,8 @@ if (!empty($_SESSION["shopping_cart"])) {
     </div>
     <?php
 }
-?>
 
-<?php
-$result = $conn->query("SELECT * FROM product");
+$result = $conn ->query("SELECT * FROM product");
 while ($row = $result->fetchArray()) {
     echo "<div class='product_wrapper'>
     <form method ='post' action =''>

@@ -7,7 +7,9 @@ create table IF NOT EXISTS orderDetails
     date TEXT,
     price INTEGER,
     paymentDetails TEXT,
-    product_id INTEGER
+    product_id INTEGER,
+    orderCode TEXT,
+    quantity INTEGER
 
 
 

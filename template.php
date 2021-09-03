@@ -33,6 +33,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="profile.php">User Profile</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="logout.php">Logout</a>
                 </li>
