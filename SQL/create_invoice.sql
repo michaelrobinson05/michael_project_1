@@ -6,5 +6,6 @@ create table IF NOT EXISTS invoice
     product_id    INTEGER,
     date        INTEGER,
     price  INTEGER,
-    payment details INTEGER
+    paymentDetails INTEGER,
+    status TEXT
 );

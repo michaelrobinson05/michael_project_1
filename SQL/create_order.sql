@@ -9,7 +9,8 @@ create table IF NOT EXISTS orderDetails
     paymentDetails TEXT,
     product_id INTEGER,
     orderCode TEXT,
-    quantity INTEGER
+    quantity INTEGER,
+    status TEXT
 
 
 

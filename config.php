@@ -46,6 +46,10 @@ createTable($query, "messages");
 $query = file_get_contents("sql/create_invoice.sql");
 createTable($query, "invoice");
 
+$query = file_get_contents("sql/create_messages.sql");
+createTable($query, "Messaging");
+
+
 $query=$conn->query("SELECT COUNT(*) as count FROM user");
 $rowCount = $query->fetchArray();
 $usercount = $rowCount["count"];
@@ -83,7 +87,6 @@ if($productCount == 0) {
     add_product('Nike Air Maxs','clothing - fashion ', 11, 210.00,'toothbrush.jpg','w7j90528');
 
 }
-
 
 
 ?>
