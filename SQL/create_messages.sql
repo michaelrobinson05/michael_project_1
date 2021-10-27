@@ -4,5 +4,10 @@ create table IF NOT EXISTS messaging
         primary key autoincrement,
     username   TEXT,
     firstname TEXT,
-    email   TEXT
+    email   TEXT,
+    sender TEXT,
+    recipient     int,
+    message       TEXT,
+    dateSubmitted DATETIME
+
 );

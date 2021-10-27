@@ -1,2 +1,2 @@
-# michael_project_1
-2021 Semester 2 
+# Shopping Organisation Project
+Lake Tuggeranong College Web Development class semester 2, 2021.
